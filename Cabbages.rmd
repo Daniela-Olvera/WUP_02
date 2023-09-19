@@ -55,6 +55,8 @@ ggplot(data, aes(x = Cult, y = VitC)) +
   labs(x = "Cult", y = "VitC")
 ```
 
+This boxplot shows the VitC of c39 and c52.c52 has a greater amount of Vitc than c39 by about 13-14 more units of VitC.
+
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ### Numerical Descriptive Results
@@ -72,6 +74,8 @@ summary_stats <- data %>%
 summary_stats
 ```
 
+This table shows that the median of VitC for c39 is 51.0 and the median for VitC of c52 is 64.5.
+
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -82,7 +86,6 @@ summary_stats
 anova_result <- aov(VitC ~ Cult, data = data)
 summary(anova_result)
 ```
-
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
